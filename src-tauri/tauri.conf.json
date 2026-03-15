@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "identifier": "com.shotocar.app",
   "build": {
-    "frontendDist": "../src"
+    "frontendDist": "../webapp/dist"
   },
   "app": {
     "withGlobalTauri": true,

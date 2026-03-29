@@ -5,14 +5,18 @@
   --black-1: #0f0f0f;
   --black-2: #171717;
   --black-3: #1f1f1f;
+
   --gray: #252525;
+  --gray-2: #3b3b3b;
 
   --white: #ebebeb;
+  --white-2: rgba(var(--white), 0.1);
 
   --blue: #2855ca;
   --green: #00bc7a;
   --red: #c74e4e;
 }
+
 * {
   color: var(--white);
   font-family: "Inter", sans-serif;

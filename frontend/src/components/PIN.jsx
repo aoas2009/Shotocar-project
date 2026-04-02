@@ -23,17 +23,13 @@ function InputBox() {
   return (
     <input
       type="text"
-      inputmode="numeric"
+      inputMode="numeric"
       maxLength={1}
       min={0}
       max={9}
       className="min-w-0 max-h-12 rounded-lg aspect-square bg-(--gray) border-3 border-(--gray-2) text-(--white-2)! text-center font-bold outline-0 focus:outline-2 outline-offset-4 outline-(--white)"
     />
   );
-}
-
-function autoPIN() {
-
 }
 
 export default PIN;

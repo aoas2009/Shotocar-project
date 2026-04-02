@@ -15,6 +15,9 @@
   --blue: #2855ca;
   --green: #00bc7a;
   --red: #c74e4e;
+
+  --bt-border-size: 20px;
+  --bt-border-color: 1.25rem;
 }
 
 * {

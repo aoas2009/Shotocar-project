@@ -39,3 +39,7 @@ body {
 .sub-text {
   opacity: 60%;
 }
+
+h1, h2, h3, p {
+  cursor: default;
+}

@@ -1,0 +1,9 @@
+.overlay::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    opacity: 30%;
+
+    color: var(--black);
+    background-color: currentColor;
+}

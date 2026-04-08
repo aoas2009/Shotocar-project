@@ -1,10 +1,17 @@
 import { useState } from "react";
-import "./Button.css";
+import { Component } from "react";
 
-function Button() {
+import Icon from "./Icon";
+import { MissingPropError } from "@/js/error";
+
+function Button({ text, color = "gray", icon, reverse = false, size = "w-full", classes }) {
+  if (!text) throw new MissingPropError("text", "Button")
+
+  const flow = (reverse) ? "flex-row" : "flex-row-reverse";
   return (
-    <button>
-      
+    <button className={`flex flex-nowrap ${flow} justify-center items-center cursor-pointer overflow-hidden bg-(--${color}) p-2 gap-1 rounded-md border-3 border-(--gray-2) ${size} ${classes || ""}`}>
+      {icon && <Icon icon={icon} size={"small"} />}
+      <span className="text-nowrap">{text}</span>
     </button>
   );
 }
